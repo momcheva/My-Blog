@@ -15,7 +15,7 @@ class UserController {
     }
     
     register(data) {
-        if (requestData.username.length < 5) {
+        if (data.username.length < 5) {
           showPopup('error', 'Username must consist of at least 5 symbols.');
           return;
         }
@@ -76,6 +76,8 @@ class UserController {
     
     logout(){
         sessionStorage.clear();
-        redirectUrl('#/');
+
+            redirectUrl('#/');
+        
     }
 }

@@ -1,0 +1,26 @@
+{{#blogPosts}}
+<li class="single-post">
+    <article id="post-{{postId}}">
+        <div class="dot">&nbsp;</div>
+        <a href="#/register"> <h3 class="title">{{title}}</h3></a>
+        <p class="subtitle">Posted on {{date}} by {{author}}</p>
+        <p class="content">{{content}}</p>
+        <div><a href="" onclick="delete()" >Delete</a></div>
+    </article>
+</li>
+{{/blogPosts}}
+
+<!--
+<div class="top-search-form">
+    <div id="search">
+        <input class="search-form" role="search" method="get" action="http://www.mycookingblog.com">
+            <label>
+                <span class="screen-reader-text">Search for:</span>
+                <input class="search-field" placeholder="Write your search and hit Enter" value="" name="s" title="
+                Search" type="search">
+            </label>
+            <input class="search-submit" value="Search" type="submit">
+        </form>
+    </div>
+</div>
+-->
