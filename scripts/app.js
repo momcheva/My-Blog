@@ -95,8 +95,8 @@
 
     run('#/');
     
-    $(document).ready(function() {
-        $(".sub-menu").prev('a').append("<span>Hello</span>");
+    /*$(document).ready(function() {
+        $(".sub-menu").prev('a.single-menu-element-link').append("<span>Hello</span>");
 
         $('.menu li :has(.sub-menu)').hover(function () {
             $(this).find('a .indicator').addClass('hover-indicator');
@@ -105,6 +105,6 @@
             $(this).find('a .hover-indicator').removeClass('hover-indicator');
             $(this).children('ul.active').slideUp('fast').removeClass('active');
         });
-    });
+    });*/
 
 })();
