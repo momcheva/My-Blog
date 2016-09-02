@@ -2,34 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Blog</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/main-style.css">
     <link rel="stylesheet" href="styles/form-style.css">
     <link rel="stylesheet" href="styles/new-post-style.css">
-    <script src="scripts/libs/mustache.js"></script>
-    <script src="scripts/libs/moment.js"></script>
+   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
     <script src="scripts/libs/jquery.min.js"></script>
     <script src="scripts/libs/jquery.noty.minified.js"></script>
+     <script src="scripts/libs/mustache.js"></script>
+    <script src="scripts/libs/moment.js"></script>
     <script src="scripts/libs/sammy.js"></script>
     <script src="scripts/libs/framework.js"></script>
+    <!-- <script type="text/javascript" src="scripts/"></script> -->
+
+    <script type="text/javascript">
+        $(window).load(function() {
+            $(".load-page").fadeOut("8000");
+        });
+</script>
+
 </head>
 <body>
-    <div class="wrapper">
+    <img src="images/bruschetta3.jpg" id="full-screen-background-image" alt="cooking">
+
+<div class="load-page"></div>
+
+<header>
+<img src="images/blog%20logo%20(1).png" alt="logo">
+
+    <form class="top_search clearfix small_top_search" role="search" method="get" action="">
+        <div class="top_search_con">
+            <input type="text" placeholder="търси..." name="s" class="s" />
+        <span class="top_search_icon">
+            <i class="ico-search4">
+
+            </i>
+        </span>
+            <input type="submit" class="top_search_submit">
+        </div>
+    </form>
+</header>
+
+<div class="wrapper">
+    
     </div>
 
-    <div id="loader-modal" class="modal">
-        <div id="loader">
-            <div id="loader-2">
-                <div id="loader-3">
-                    <div id="loader-4">
-                        <div id="loader-5">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script src="scripts/views/homeView.js"></script>
     <script src="scripts/controllers/homeController.js"></script>
@@ -38,5 +58,9 @@
     <script src="scripts/views/postView.js"></script>
     <script src="scripts/controllers/postController.js"></script>
     <script src="scripts/app.js"></script>
+
+
+
 </body>
+
 </html>

@@ -1,39 +1,54 @@
-<aside class="sidebar">
-    <div class="logo"><img src="images/logo_sidebar.png" alt=""></div>
-    <hr>
-    <nav>
-        <ul>
+
+<div id="result"></div>
+<div class="main-menu">
+
+    <hr class="style2">
+        <ul class="menu">
             <li class="single-menu-element">
                 <a href="#/" class="single-menu-element-link">
-                    Home
+                    Начало
                 </a>
             </li>
 
             <li class="single-menu-element">
                 <a href="#/posts/create" class="single-menu-element-link">
-                    Create Post
+                    Създаване на нов пост
                 </a>
             </li>
 
+            <li class="single-menu-element"><a href="#/" class="single-menu-element-link">Рецепти</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Салати</a></li>
+                    <li><a href="#">Разядки</a></li>
+                    <li><a href="#">Супи</a></li>
+                    <li><a href="#">Основни</a></li>
+                    <li><a href="#">Десерти</a></li>
+                </ul>
+            </li>
+            <li class="single-menu-element">
+                <a href="#/" class="single-menu-element-link">
+                    За мен
+                </a>
+            </li>
             <li class="single-menu-element">
                 <a href="#/logout" class="single-menu-element-link">
-                    Logout
+                    Изход
                 </a>
             </li>
         </ul>
+    <hr>
 
-        <hr>
-        <h2 class="recent-posts-title">Recent Posts</h2>
-        <hr>
+</div>
 
-        <ul class="recent-posts">
-        </ul>
-    </nav>
+<aside class="sidebar">
+<h2 class="recent-posts-title">Последни постове</h2>
+    <img src="images/heart-dividers-2.png" id="sidebar-image" alt="divider">
+
+    <ul class="recent-posts">
+    </ul>
 </aside>
+
 <main class="main-content">
-    <header class="blog-title">
-        <h3>home</h3>
-    </header>
     <ul class="articles" id="article">
     </ul>
     <footer>
